@@ -4,10 +4,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-
-
 console.log(path.join(__dirname, 'src/demofile.txt'));
-
 
 // read file sync to get the data
 const textdata = fs.readFileSync(path.join(__dirname, 'src/demofile.txt'), 'utf8');
@@ -37,8 +34,6 @@ fs.renameSync(path.join(__dirname, 'src/demofile2.txt'), path.join(__dirname, 's
 //         console.log(file);
 //     }
 // });
-
-
 
 
 
